@@ -102,6 +102,7 @@ Creating a graph with dash's core components is very similar to creating a graph
 
 > ```python
 dcc.Graph(
+    id = "Example Graph",
     figure = {
         data: [
             {'x': [1,2,3], 'y': [4,5,6], 'type': "bar", 'name': "Example"},
@@ -113,9 +114,9 @@ dcc.Graph(
     }
 ```
 
-As we can see, our graph has a dictionary called `figure`, which has two attributes, `data` and `layout`. Data, is the stuff we want to plot on our graph -- it has data points for the `x` and `y` axes as well as the type of graph  and the name of each grouping of data. The figure's layout arrtibute takes a title so we can give our graph a descriptive title -- pretty simple.
+As we can see, first our graph has an `id` attribute. Although we wont be using the ID in this lab, this is a necessary attribute. Next, our graph has a dictionary called `figure`, which has two attributes, `data` and `layout`. Data, is the stuff we want to plot on our graph -- it has data points for the `x` and `y` axes as well as the type of graph  and the name of each grouping of data. The figure's layout arrtibute takes a title so we can give our graph a descriptive title -- pretty simple.
 
-Let's try building this out with the data we already have provided for us in the uber_data.py file. We can either import this data or copy it over to our app.py file. Once we have our data in place, we will give our graph the title, `"Uber Pricing in Brooklyn and Manhattan"` and then our graph should be good to go! Let's save our work and view our dash app in the browser again.
+Let's try building this out with the data we already have provided for us in the uber_data.py file. We can either import this data or copy it over to our app.py file. Let's give our graph an `id` of "uber_data_" we have our data in place, we will give our graph the title, `"Uber Pricing in Brooklyn and Manhattan"` and then our graph should be good to go! Let's save our work and view our dash app in the browser again.
 
 ![preview of new dash app](https://learn-verified.s3.amazonaws.com/data-science-assets/dash_manhattan_brooklyn_uber_prices.png)
 
