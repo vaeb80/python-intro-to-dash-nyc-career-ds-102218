@@ -19,7 +19,7 @@ First things first, we will need to install all the parts of Dash that we will b
 * dash-core-components -- *dash's components for creating data visualizations and other tools*
 * plotly -- *the plotly graphing library*
     
-We can install all of these by simpling running one command in our terminal:
+We can install all of these by running one command in our terminal:
     
 > `pip install dash dash-renderer dash-html-components dash-core-components plotly`
 
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 ```
 
-Okay, once we've done the above, we have ourselves a Dash app! It doesnt do much (or show much in our browser), but we can certainly run the server and look at in our browser. Let's try it by running the following command in our terminal and then opening a new tab in our browser and navigating to `http://localhost:8050/`
+Okay, once we've done the above, we have ourselves a Dash app! It doesn't do much (or show much in our browser), but we can certainly run the server and look at in our browser. Let's try it by running the following command in our terminal and then opening a new tab in our browser and navigating to `http://localhost:8050/`
 
 > `python app.py`
 
@@ -98,7 +98,7 @@ Okay okay, we can display HTML. That is fun and all, but let's get to the good s
 
 Remember when we imported dash's core components? Well, we are going to finally use them! We will use the `dcc` import to create a graph. To do this, we will simply add a third element to our list of children in our app's outer most `div`. 
 
-Creating a graph with dash's core components is very similar to creating a graph using the plotly libray. First, we will create a new graph object with `dcc.Graph()`. The graph object takes a few different attributes. Below we see an example graph object:
+Creating a graph with dash's core components is very similar to creating a graph using the plotly library. First, we will create a new graph object with `dcc.Graph()`. The graph object takes a few different attributes. Below we see an example graph object:
 
 > ```python
 dcc.Graph(
@@ -122,4 +122,4 @@ Let's try building this out with the data we already have provided for us in the
 
 ## Summary
 
-Great work! We learned how to set up a Dash app in this lab. Then, we added a layout using dash's html components and learned how to create nested html tags on our layout. Finally, we practiced data visualisation using dash's core components to create a graph with pre-polutated data showing the relationship between distance and price in taxi fares in Brooklyn and Manhattan.
+Great work! We learned how to set up a Dash app in this lab. Then, we added a layout using dash's html components and learned how to create nested html tags on our layout. Finally, we practiced data visualization using dash's core components to create a graph with pre-populated data showing the relationship between distance and price in taxi fares in Brooklyn and Manhattan.
